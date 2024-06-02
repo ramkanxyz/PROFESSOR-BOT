@@ -32,9 +32,9 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('mongodb+srv://swerahu724855:crazy&xyz@ram.hvospfq.mongodb.net/?retryWrites=true&w=majority', "")
+DATABASE_URL = environ.get('mongodb+srv://swerahu724855:crazy&xyz@ram.hvospfq.mongodb.net/?retryWrites=true&w=majority', " ")
 DATABASE_NAME = environ.get('RAM', "RAM")
-FILE_DB_URL = environ.get("mongodb+srv://swerahu724855:crazy&xyz@ram.hvospfq.mongodb.net/?retryWrites=true&w=majority", mongodb+srv://swerahu724855:crazy&xyz@ram.hvospfq.mongodb.net/?retryWrites=true&w=majority)
+FILE_DB_URL = environ.get("mongodb+srv://swerahu724855:crazy&xyz@ram.hvospfq.mongodb.net/?retryWrites=true&w=majority", )
 FILE_DB_NAME = environ.get("FILE_DB_NAME", RAM)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
